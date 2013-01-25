@@ -1,0 +1,250 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities";
+@import "compass/css3/images";
+
+html
+{
+	font-family: Georgia, "Times New Roman", serif;
+	background-color: #Ee3333;
+	@include filter-gradient(#d42222,  #411, vertical);
+	@include background-image(linear-gradient(#d42222,  #411));
+	color: #1D1D1D;
+	//background-image: url("../images/backgrounds/hardplaces.jpg");
+	//background-repeat:no-repeat;
+	//background-size:cover;
+}
+body
+{
+	min-width: 504px;
+	margin-left:auto;
+	margin-right:auto;
+	@media screen and (max-width: 799px)
+	{
+		width:100%;
+	}
+	
+	@media screen and (min-width: 800px)
+	{
+		//width:97%;
+		//min-width: 300px;
+	}
+	@media screen and (min-width: 1080px)
+	{		
+		//width: 90%;
+	}
+}
+
+a
+{
+	text-decoration:underline;
+	color: #FdF;	
+}
+
+#homemenulink
+{
+	text-align: center;
+}
+	
+.menu
+{
+	width: 100%;
+	position: relative;
+	display:block;
+	>li
+	{
+		float: left;
+		width: 25%;
+	}
+	li
+	{
+		display:block;
+		list-style-type:none;
+		overflow: hidden;
+		font-size: 20px;
+		background-color: #a22;
+		a
+		{
+			display: block;
+			height: 2em;
+			line-height: 2em;
+			padding: 0 1.5em;
+			text-decoration: none;
+			display:block;
+			color: #FaFbFb;
+			text-decoration: none;
+		}
+		a:hover
+		{
+			text-decoration:underline;
+		}
+		a:visited
+		{
+			text-decoration:none;
+			color: #FaFbFb;
+		}
+	}
+	
+	
+	ul 
+	{
+		position: absolute;
+		display: none;
+		z-index: 999;
+
+	}
+	ul li a 
+	{
+		width: 100%;
+		display:inline;
+		margin-bottom: 90px;
+	}
+	li:hover ul
+	{
+		display: block;	
+
+	}	
+}
+
+#banner
+{
+	width:100%;	
+	height: 240px;
+}
+
+.bannerbox
+{	
+	display:block;
+	overflow:hidden;
+}
+
+.footer
+{
+	margin-left:auto;
+	margin-right:auto;		
+	display:block;
+	overflow:hidden;
+	margin-bottom: 120px;
+	padding-right: 8px;
+	margin-top:4px;
+	font-size: 10px;
+ 	color: #c0c0c0;
+	text-align: right;
+}
+
+#credit
+{
+	font-size: 10px;
+ 	color: #c0c0c0;
+}
+
+
+.content
+{	
+	font-size: 16px;
+	width:100%;
+
+}
+
+.imagebox
+{
+	//position:absolute;
+	//top: 200px;
+	//min-height:200px;
+	
+}
+
+.content_pic
+{
+	@media screen and (max-width: 1079px)
+	{
+		//width:100%;
+		//min-width: 300px;
+	}
+	@media screen and (min-width: 1080px)
+	{		
+		//height:100%;
+		width: 80%;
+		max-width: 900px;
+	}
+
+		
+		
+}
+
+
+.blurb
+{
+
+	@media screen and (max-width: 799px)
+	{
+	}
+	@media screen and (min-width: 800px)
+	{
+		position:absolute;
+		//top: 392px;
+		top: 283px;
+		right: 0px;		
+		//right: 1.5%;		
+		width: 60%;
+		min-width: 300px;
+		max-width: 700px;
+		font-size: 110%;
+
+
+	}
+	@media screen and (min-width: 1080px)
+	{		
+		position:absolute;
+		top: 283px;
+		right: 0px;		
+		width: 60%;
+		min-width: 300px;
+		max-width: 700px;
+		font-size: 120%;
+	
+	}
+
+	text-align: left;
+	display: block;
+	float: right;
+
+	z-index:1;
+	color: #FCFDFD ;
+	background-color: #122;
+	opacity: 0.8;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	display:block;
+	overflow: hidden;
+	line-height: 160%;
+	padding-top: 3em;
+	p
+	{
+		padding-left: 4em;
+		padding-right: 2em;
+		padding-bottom: 2em;
+	}
+	h2
+	{
+		padding-left: 5em;
+		padding-right: 3em;
+		font-size:150%;
+		margin-bottom:8px;
+	}
+	h3
+	{
+		font-size:135%;
+		padding-left: 5em;
+		padding-right: 3em;
+		margin-bottom:8px;
+
+	}
+}
+
+
+

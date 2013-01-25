@@ -10,17 +10,17 @@
 		<img id='banner' src="images/signbanner.jpg"></img>
 	</div>	
 		
-	    {% include menu.html %}
+	   {% include menu.html %}
 
 
 	<div class='content' id='{{page.title}}_content' >
 
 		<span class='imagebox'>
 			<img src="{{page.image}}" class='content_pic'></img>  
-			<!--span id='credit'>Shernaz Patel in Hard Places. Photograph by Robert Day</span-->
+			<!--span id='credit'>{{page.credit}}</span-->
 		</span>
 	
-		<span class="blurb">
+		<span class="blurb" id='{{page.title}}_blurb' >
 {{content}}
 		</span>
 	</div>

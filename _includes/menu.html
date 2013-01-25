@@ -1,0 +1,39 @@
+
+	<ul class='menu' >
+		<li id='homemenulink'><a href ="index.html"  >Home Page</a></li>
+		<li id='menu_currentlink'>
+			<a href ="menu_current.html" >Current Projects</a>
+			<ul>
+			<!-- {% if page.category==current %} {% endif %} 
+		
+	-->
+	
+			{% for post in site.posts %}
+					<li>	
+						<a href="{{ post.url }}">
+							{{ post.title }}
+						</a>
+					</li>
+
+			{% endfor %}
+
+			</ul>
+		</li>
+		<li id='menu_pastlink'>
+			<a href ="menu_past.html" >Past Projects</a>
+			<ul>
+				<li><a href ="proj_cinna.html" >I, Cinna (The Poet)</a></li>
+				<li><a href ="proj_dylan100.html" >Dylan Thomas 100</a></li>
+				<li><a href ="proj_tellingstories.html" >Telling Stories</a></li>
+				<li><a href ="proj_theatrescience.html" >Theatrescience</a></li>
+				<li><a href ="proj_forgottenfootprints.html" >Forgotten Footprints</a></li>
+			</ul>
+		</li>
+		<li id='aboutmenulink'><a href ="about.html" >About Us</a>
+	</ul>		
+
+	
+	
+
+
+	
